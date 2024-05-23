@@ -1,0 +1,15 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $ff-primary;
+  min-height: 100vh;
+  background-color: $clr-bg;
+
+  @include respond(max-width, 32.5em) {
+    background-image: $bg-gradient;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,16 @@
+.heading-primary {
+  text-transform: uppercase;
+  font-weight: $fw;
+  font-size: clamp($fs-600, 3.125rem + 1.625vw, $fs-700);
+  line-height: $lh-900;
+
+  @include respond(max-width, 32.5em) {
+    line-height: normal;
+  }
+}
+
+.body-text {
+  font-weight: $fw;
+  font-size: $fs-400;
+  line-height: $lh-400;
+}

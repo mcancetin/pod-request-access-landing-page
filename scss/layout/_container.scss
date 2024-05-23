@@ -1,0 +1,7 @@
+.container {
+  padding-top: 13.4rem;
+
+  @include respond(max-width, 64em) {
+    padding-top: 7.6rem;
+  }
+}

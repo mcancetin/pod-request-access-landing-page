@@ -1,0 +1,20 @@
+.button {
+  background-color: $clr-primary;
+  border-radius: 2.8rem;
+  box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.2);
+  font-size: $fs-300;
+  line-height: $lh-400;
+  font-weight: bold; // different from design
+  color: $clr-bg;
+  padding: 0.9rem 2.7rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  @include respond(max-width, 32.5em) {
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: lighten($clr-primary, 15%);
+  }
+}

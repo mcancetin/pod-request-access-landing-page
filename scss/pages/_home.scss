@@ -1,0 +1,65 @@
+.hero {
+  &__content {
+    background-color: $clr-bg;
+    padding-top: 8.8rem;
+    padding-bottom: 1rem;
+    max-width: 120ch;
+
+    @include respond(max-width, 64em) {
+      max-width: 100ch;
+    }
+
+    @include respond(max-width, 32.5em) {
+      text-align: center;
+      background-color: transparent;
+      padding: 0;
+    }
+
+    & div:first-of-type {
+      max-width: 80ch;
+    }
+  }
+
+  &__heading {
+    font-weight: 200; // different from design
+    color: $clr-white;
+    padding-bottom: 2.4rem;
+  }
+
+  &__emphasize {
+    color: $clr-primary;
+  }
+
+  &__text {
+    color: $clr-light-gray;
+    padding-bottom: 4rem;
+  }
+
+  &__form {
+    position: relative;
+    padding-bottom: 6.4rem;
+  }
+
+  &__button {
+    top: 0.35rem;
+    right: 0.45rem;
+    position: absolute;
+    @include respond(max-width, 32.5em) {
+      position: initial;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    gap: 4rem;
+
+    @include respond(max-width, 32.5em) {
+      justify-content: center;
+    }
+    & > img {
+      @include respond(max-width, 32.5em) {
+        width: 16%;
+      }
+    }
+  }
+}

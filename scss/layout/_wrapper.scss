@@ -1,0 +1,7 @@
+.wrapper {
+  $padding: 1.2rem;
+  $width: 1110px;
+
+  width: min($width, 100% - ($padding * 2));
+  margin-inline: auto;
+}

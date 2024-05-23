@@ -1,0 +1,26 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  &__field {
+    border: none;
+    background-color: $clr-secondary;
+    border-radius: 2.8rem;
+    padding: 1.6rem 3.2rem;
+    font-size: $fs-300;
+    color: $clr-white;
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+
+  &__error {
+    display: inline-block;
+    padding-left: 3.2rem;
+    padding-top: 0.8rem;
+    color: $clr-error;
+    font-size: $fs-200;
+    line-height: $lh-200;
+  }
+}

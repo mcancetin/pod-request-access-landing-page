@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/scss/main.scss">
+  <script defer src="main.js"></script>
+
+  <title>Frontend Mentor | Pod request access landing page</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="wrapper">
+        <a href="/">
+          <img class="header__logo" src="public/desktop/logo.svg" alt="">
+        </a>
+        <div class="header__img">
+          <picture>
+            <source media="(min-width:1024px)" srcset="/desktop/image-host.jpg" />
+            <source media="(min-width:640px)" srcset="/tablet/image-host.jpg" />
+            <img srcset="/mobile/image-host.jpg" alt="" class="hero__image" />
+          </picture>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class=" hero">
+        <div class="wrapper">
+          <div class="hero__content">
+            <h1 class="hero__heading | heading-primary"><span class="hero__emphasize">
+                Publish your podcasts
+              </span>everywhere.</h1>
+
+            <div>
+              <p class="hero__text | body-text">
+                Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
+                Apple Podcasts, Google Podcasts, Pocket Casts and more!
+              </p>
+
+              <form id="form" class="hero__form">
+                <div class="hero__input | input">
+                  <input class="input__field" required type="text" name="email" id="email" placeholder="Email address">
+                  <span class="input__error"></span>
+                </div>
+                <button class="hero__button | button" type="submit">
+                  Request Access
+                </button>
+              </form>
+            </div>
+
+
+            <div class="hero__icons">
+              <img src="public/desktop/spotify.svg" alt="">
+              <img src="public/desktop/apple-podcast.svg" alt="">
+              <img src="public/desktop/google-podcasts.svg" alt="">
+              <img src="public/desktop/pocket-casts.svg" alt="">
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
+
+<!-- <button class="button" type="submit">
+  Request Access
+</button> -->
+
+<!-- <div class="input">
+  <input class="input__field" type="email" placeholder="Email address">
+  <span class="input__error"></span>
+</div> -->
+
+<!-- Publish your podcasts everywhere.
+
+Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
+Apple Podcasts, Google Podcasts, Pocket Casts and more!
+
+Request access -->

@@ -1,0 +1,41 @@
+.header {
+  position: relative;
+  padding-bottom: 7.7rem;
+
+  @include respond(max-width, 64em) {
+    padding-bottom: 6.5rem;
+  }
+
+  @include respond(max-width, 32.5em) {
+    padding-bottom: 5.7rem;
+  }
+  & .wrapper {
+    @include respond(max-width, 32.5em) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__logo {
+    transform: translate(0, -50%);
+    @include respond(max-width, 32.5em) {
+      transform: translate(0);
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    z-index: -1;
+
+    @include respond(max-width, 64em) {
+      background-color: red;
+      top: -13.5rem;
+    }
+
+    @include respond(max-width, 32.5em) {
+      display: none;
+    }
+  }
+}
